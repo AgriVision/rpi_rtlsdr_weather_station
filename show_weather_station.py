@@ -67,6 +67,8 @@ def calc_rain_per_day(timestamp,rain):
             if dt_object.date() > dt_object_prev.date():
                 #print(dt_object_prev.date(), rain[i]- startrain)
                 datestamp.append(dt_object_prev.date())
+                if rain[i] < startrain: # we got a reset
+                    startrain = rain[i]
                 rain_per_day.append(round(rain[i]- startrain,1))
                 startrain = rain[i]
         i=i+1
