@@ -70,4 +70,6 @@ Add the command to /etc/rc.local if you want the application to start automatica
 # show weather station logs in dash application
 python3 /home/pi/rpi_rtlsdr_weather_station/show_weather_station.py >> /var/log/show_weather_station.log 2>&1 &
 ```
+More information can be found on: https://www.agri-vision.nl/portal/projects/25-rtl-sdr-based-weather-station-on-raspberry-pi
+
 That's it!
